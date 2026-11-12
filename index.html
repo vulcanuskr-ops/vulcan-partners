@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulcan Partners | Strategic Angel Investor</title>
+    <!-- 구글 검색 노출을 위한 SEO 메타 데이터 -->
+    <meta name="description" content="한·중 크로스보더 비즈니스에 자본과 실무 인프라를 동시에 출자하는 실전형 엔젤 투자자, 벌칸 파트너스">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1. 고정 헤더 -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">VULCAN PARTNERS</div>
+        </div>
+    </header>
+
+    <!-- 2. 메인 슬로건 (Hero) -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in-up">We Forge.<br>You Conquer.</h1>
+            <p class="sub-copy fade-in-up" style="transition-delay: 0.2s;">Vulcan Partners는 국내 유망 초기 스타트업에 자본을 투여하는
+                <strong>엔젤 투자자(Angel Investor)</strong>이자, 중국 시장 스케일업이 필요한 파트너에게 현지 실무망을 엮어내는 실전형 컴퍼니 빌더입니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. 투자 인프라 및 자산 (Assets) -->
+    <section class="assets">
+        <div class="container">
+            <h2 class="fade-in-up">Backed by Real Infrastructure</h2>
+            <p class="section-desc fade-in-up">벌칸 파트너스는 단순 자문이나 외주 중개에 머물지 않습니다. 중국 현지 B2B 법인의 주요 주주로서 확보한 실물 인프라를
+                무기로, 당사가 직접 발로 뛰는 압도적인 현장 실행력을 피투자사에 투입합니다.</p>
+
+            <div class="portfolio-logos fade-in-up">
+                <div class="logo-box">현지 제조 법인 CI</div>
+                <div class="logo-box">B2B 무역 법인 CI</div>
+            </div>
+
+            <ul class="asset-list">
+                <li class="fade-in-up">
+                    <h3>Asset 01. Financial Investment</h3>
+                    <p>국내 유망 초기 스타트업 대상 엔젤 투자 및 전략적 지분 참여</p>
+                </li>
+                <li class="fade-in-up">
+                    <h3>Asset 02. Local Sourcing & Research</h3>
+                    <p>중국 로컬 핏(Fit) 시장 조사, 현지 제조망(OEM/외주) 발굴, 단가 협상 및 생산 컨트롤 실무 지원</p>
+                </li>
+                <li class="fade-in-up">
+                    <h3>Asset 03. Joint Venture & Operation</h3>
+                    <p>중국 신설 법인 합작(JV) 시 지분 투자와 함께, 사업이 안정화될 때까지 내부 실무진으로 직접 합류하여 오퍼레이팅 리스크 방어</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 4. 파일럿 프로젝트 (Pilot) -->
+    <section class="pilot">
+        <div class="container">
+            <h2 class="fade-in-up">The Pilot: Test the Synergy</h2>
+            <p class="section-desc fade-in-up">신뢰는 하루아침에 쌓이지 않습니다. 본격적인 지분 투자나 합작에 앞서, 중국 시장 조사나 현지 공장 발굴(OEM) 같은 단기 파일럿
+                프로젝트 의뢰를 통해 벌칸의 현장 실무력을 먼저 검증해 보십시오.</p>
+        </div>
+    </section>
+
+    <!-- 5. 투자 제안 (CTA) -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="fade-in-up">Pitch Your Vision</h2>
+            <p class="section-desc fade-in-up">초기 자금 조달부터 인프라가 결합된 중국 합작(JV) 제안까지, 귀사의 다음 도약을 증명할 비전을 들려주십시오.</p>
+            <a href="mailto:contact@vulcan.co.kr" class="btn-pitch fade-in-up">Submit Pitch Deck / IR</a>
+        </div>
+    </section>
+
+    <!-- 6. 하단 푸터 (Footer) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <div class="footer-brand">VULCAN PARTNERS</div>
+                <div class="footer-info">
+                    <p>Strategic Angel Investor & Operating Partner</p>
+                    <p>Email: partners@vulcan.co.kr</p>
+                </div>
+            </div>
+            <div class="footer-bottom fade-in-up">
+                <p>&copy; 2026 Vulcan Partners. All rights reserved.</p>
+                <p class="locations">BUSAN &middot; SHANGHAI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 스크롤 애니메이션 자바스크립트 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 }); // 화면에 10% 정도 보일 때 애니메이션 시작
+
+            document.querySelectorAll('.fade-in-up').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
