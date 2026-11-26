@@ -29,7 +29,8 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Cache Busting (?v=2.3) -->
+    <link rel="stylesheet" href="assets/css/style.css?v=2.3">
 </head>
 
 <body>
@@ -49,26 +50,34 @@
         </div>
     </header>
 
-    <!-- 2. Hero (단독 와이드 구성) -->
+    <!-- 2. Hero -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <p class="eyebrow fade-in-up">Independent Angel Investor &amp; Founder</p>
-                <h1 class="fade-in-up">We Forge.<br>You Conquer.</h1>
-                <p class="sub-copy fade-in-up" style="transition-delay: 0.12s;">
-                    Vulcan Partners는 국내 유망 초기 기업에 개인 자본을 투자하는 <strong>엔젤 투자자(Angel Investor)</strong>의 공식 창구입니다.
-                    중국 현지 제조 법인의 지분을 보유한 주주로서, 향후 중국 생산이나 현지 진출이 필요한 파트너에게 검증된 현장 접점과 현실적인 실무 조언을 함께 연결합니다.
-                </p>
-                <div class="hero-actions fade-in-up" style="transition-delay: 0.2s;">
-                    <a href="#contact" class="btn-primary-link">Contact / Share Deck</a>
-                    <a href="#portfolio" class="btn-ghost-link">View Holdings</a>
+            <div class="hero-shell">
+                <div class="hero-content">
+                    <p class="eyebrow fade-in-up">Independent Angel Investor &amp; Founder</p>
+                    <h1 class="fade-in-up">We Forge.<br>You Conquer.</h1>
+                    <p class="sub-copy fade-in-up" style="transition-delay: 0.12s;">
+                        Vulcan Partners는 국내 유망 초기 기업에 개인 자본을 투자하는 <strong>엔젤 투자자(Angel Investor)</strong>의 공식 창구입니다.
+                        중국 현지 제조 법인의 지분을 보유한 주주로서, 향후 중국 생산이나 현지 진출이 필요한 파트너에게 검증된 현장 접점과 현실적인 실무 조언을 함께 연결합니다.
+                    </p>
+                    <div class="hero-actions fade-in-up" style="transition-delay: 0.2s;">
+                        <a href="#contact" class="btn-primary-link">Contact / Share Deck</a>
+                        <a href="#portfolio" class="btn-ghost-link">View Holdings</a>
+                    </div>
                 </div>
+
                 <div class="hero-meta fade-in-up" style="transition-delay: 0.28s;">
-                    <span>BUSAN</span>
-                    <span class="dot">&middot;</span>
-                    <span>SHANGHAI</span>
-                    <span class="dot">&middot;</span>
-                    <span>DOMESTIC ANGEL INVESTMENT &amp; CHINA MANUFACTURING BRIDGE</span>
+                    <div class="hero-meta-group">
+                        <span>BUSAN</span>
+                        <span class="dot">&middot;</span>
+                        <span>SHANGHAI</span>
+                    </div>
+                    <div class="hero-meta-group">
+                        <span>ANGEL INVESTMENT</span>
+                        <span class="dot">&middot;</span>
+                        <span>CHINA MANUFACTURING BRIDGE</span>
+                    </div>
                 </div>
             </div>
         </div>
