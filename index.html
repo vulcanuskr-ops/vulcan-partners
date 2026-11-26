@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <!-- 1. Fixed Header (확대 CI + 슬로건) -->
+    <!-- 1. Fixed Header -->
     <header class="main-header">
         <div class="container header-inner">
             <a href="#" class="brand-link" aria-label="Vulcan Partners Home">
@@ -49,57 +49,37 @@
         </div>
     </header>
 
-    <!-- 2. Hero (2단 와이드 구성) -->
+    <!-- 2. Hero (단독 와이드 구성) -->
     <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-main">
+        <div class="container">
+            <div class="hero-content">
                 <p class="eyebrow fade-in-up">Independent Angel Investor &amp; Founder</p>
                 <h1 class="fade-in-up">We Forge.<br>You Conquer.</h1>
                 <p class="sub-copy fade-in-up" style="transition-delay: 0.12s;">
                     Vulcan Partners는 국내 유망 초기 기업에 개인 자본을 투자하는 <strong>엔젤 투자자(Angel Investor)</strong>의 공식 창구입니다.
                     중국 현지 제조 법인의 지분을 보유한 주주로서, 향후 중국 생산이나 현지 진출이 필요한 파트너에게 검증된 현장 접점과 현실적인 실무 조언을 함께 연결합니다.
                 </p>
-                <div class="hero-actions fade-in-up" style="transition-delay: 0.22s;">
+                <div class="hero-actions fade-in-up" style="transition-delay: 0.2s;">
                     <a href="#contact" class="btn-primary-link">Contact / Share Deck</a>
                     <a href="#portfolio" class="btn-ghost-link">View Holdings</a>
                 </div>
+                <div class="hero-meta fade-in-up" style="transition-delay: 0.28s;">
+                    <span>BUSAN</span>
+                    <span class="dot">&middot;</span>
+                    <span>SHANGHAI</span>
+                    <span class="dot">&middot;</span>
+                    <span>DOMESTIC ANGEL INVESTMENT &amp; CHINA MANUFACTURING BRIDGE</span>
+                </div>
             </div>
-
-            <aside class="profile-card fade-in-up" style="transition-delay: 0.18s;">
-                <p class="profile-card-title">Profile Overview</p>
-                <ul class="profile-list">
-                    <li>
-                        <span class="profile-key">Identity</span>
-                        <span class="profile-val">김가람 (Raphael Kim) · 개인 엔젤 투자자</span>
-                    </li>
-                    <li>
-                        <span class="profile-key">Primary Focus</span>
-                        <span class="profile-val">국내 초기 기업 엔젤 투자 (전 산업군 · 실물·기술 기반)</span>
-                    </li>
-                    <li>
-                        <span class="profile-key">Value-Add</span>
-                        <span class="profile-val">지분 보유 중국 제조 법인 기반의 현지 생산·진출 실무 브릿지</span>
-                    </li>
-                    <li>
-                        <span class="profile-key">Base &amp; Network</span>
-                        <span class="profile-val">BUSAN &middot; SHANGHAI</span>
-                    </li>
-                </ul>
-            </aside>
         </div>
     </section>
 
-    <!-- 3. 01 / Focus (역할과 투자 영역) -->
+    <!-- 3. 01 / Focus -->
     <section id="focus">
         <div class="container">
             <div class="section-header fade-in-up">
-                <div>
-                    <p class="section-label">01 / Focus</p>
-                    <h2>What I Do</h2>
-                </div>
-                <p class="section-desc">
-                    화려한 대행이나 과장된 약속 대신, 직접 투자하고 실제로 지분을 보유한 현장 경험의 범위 안에서만 솔직하고 실질적으로 움직입니다.
-                </p>
+                <p class="section-label">01 / Focus</p>
+                <h2>What I Do</h2>
             </div>
 
             <div class="focus-grid fade-in-up">
@@ -123,35 +103,28 @@
         </div>
     </section>
 
-    <!-- 4. 02 / Portfolio (실제 지분 보유 회사 + 클릭 링크) -->
+    <!-- 4. 02 / Portfolio -->
     <section id="portfolio">
         <div class="container">
             <div class="section-header fade-in-up">
-                <div>
-                    <p class="section-label">02 / Portfolio</p>
-                    <h2>Equity Holdings</h2>
-                </div>
-                <p class="section-desc">
-                    직접 지분을 보유하고 있거나 투자에 참여한 기업들입니다. 각 회사 카드를 클릭하면 공식 웹사이트로 이동합니다.
-                </p>
+                <p class="section-label">02 / Portfolio</p>
+                <h2>Equity Holdings</h2>
             </div>
 
-            <!-- 기존 Core Portfolio 01 요약 유지 -->
             <div class="portfolio-summary fade-in-up">
                 <p class="portfolio-summary-tag">Manufacturing Equity Base</p>
                 <h3>China Manufacturing Equity</h3>
                 <p>
-                    중국 현지 제조 법인의 주요 주주 지분 보유. 금형·사출·조립 등 실물 생산 라인과 품질 통제 프로세스에 직접 접근 가능한 현장 기반을 갖추고 있습니다.
+                    중국 현지 제조 법인의 주요 주주 지분 보유. 금형·사출·조립 및 용접 자동화 등 실물 생산 라인과 품질 통제 프로세스에 직접 접근 가능한 현장 기반을 갖추고 있습니다.
                 </p>
             </div>
 
-            <!-- 투자·지분 보유 회사 카드 (클릭 시 각 회사 홈페이지로 이동) -->
             <div class="portfolio-grid fade-in-up">
                 <!-- 회사 1: href에 홈페이지 주소, img에 CI 경로, h4에 회사명 입력 -->
                 <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="company-card">
                     <div class="company-card-top">
                         <div class="company-logo-wrap">
-                            <!-- CI 이미지 파일 추가 시 아래 span을 지우고 img 주석을 해제하세요 -->
+                            <!-- CI 이미지 추가 시 아래 span을 지우고 img 주석을 해제하세요 -->
                             <!-- <img src="assets/img/portfolio-01.png" alt="Company 01 CI" class="company-ci-img"> -->
                             <span class="company-ci-placeholder">COMPANY 01 CI</span>
                         </div>
@@ -171,7 +144,7 @@
                 <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="company-card">
                     <div class="company-card-top">
                         <div class="company-logo-wrap">
-                            <!-- CI 이미지 파일 추가 시 아래 span을 지우고 img 주석을 해제하세요 -->
+                            <!-- CI 이미지 추가 시 아래 span을 지우고 img 주석을 해제하세요 -->
                             <!-- <img src="assets/img/portfolio-02.png" alt="Company 02 CI" class="company-ci-img"> -->
                             <span class="company-ci-placeholder">COMPANY 02 CI</span>
                         </div>
@@ -190,17 +163,12 @@
         </div>
     </section>
 
-    <!-- 5. 03 / Approach (개인 엔젤 투자자 톤으로 재정비) -->
+    <!-- 5. 03 / Approach -->
     <section id="approach">
         <div class="container">
             <div class="section-header fade-in-up">
-                <div>
-                    <p class="section-label">03 / Approach</p>
-                    <h2>How I Work</h2>
-                </div>
-                <p class="section-desc">
-                    복잡한 형식보다 대표자 간의 직접적이고 투명한 대화를 우선합니다. 가능한 것과 불가능한 것을 처음부터 명확히 구분합니다.
-                </p>
+                <p class="section-label">03 / Approach</p>
+                <h2>How I Work</h2>
             </div>
 
             <div class="process-grid fade-in-up">
@@ -242,17 +210,12 @@
         </div>
     </section>
 
-    <!-- 6. 04 / Contact (JV 문구 제거, 기존 하이브리드 구조 유지) -->
+    <!-- 6. 04 / Contact -->
     <section id="contact" class="cta">
         <div class="container">
             <div class="section-header fade-in-up">
-                <div>
-                    <p class="section-label">04 / Contact</p>
-                    <h2>Get in Touch</h2>
-                </div>
-                <p class="section-desc">
-                    초기 엔젤 투자 논의부터 중국 제조·현지 진출 관련 가벼운 미팅 문의까지 아래 양식 또는 공식 이메일로 편하게 연락해 주십시오.
-                </p>
+                <p class="section-label">04 / Contact</p>
+                <h2>Get in Touch</h2>
             </div>
 
             <div class="contact-layout fade-in-up">
@@ -307,7 +270,7 @@
         </div>
     </section>
 
-    <!-- 7. Footer (확대된 CI + 슬로건) -->
+    <!-- 7. Footer -->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
